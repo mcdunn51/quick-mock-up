@@ -1,0 +1,192 @@
+@import "bourbon";
+
+/* Global resets */
+* {box-sizing: border-box; margin: 0; padding: 0;}
+
+body {
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif; 
+  color: #424242; 
+  line-height: 1.4;
+}
+
+/* Fonts */
+h1 {
+  font-family: "rooney-web", 'AmericanTypewriter', Rockwell, serif;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.container {
+  margin: 2em auto;
+  max-width: 630px;
+  text-align: center;
+}
+
+/* COLORS: 
+  blue: #20A1D4;
+  green: #1CBC2C;
+  orange: #EF5F3C;
+  black: #424242;
+  grey: #777;
+  light grey: #eaeaea;
+*/
+
+/* Your CSS goes here */
+#mainHeading::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px;
+    position: absolute;
+    bottom: -12px;
+    right: 25px;
+    border-color: #424242 transparent transparent;
+}
+
+#mainHeading {
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #424242;
+  color: #eaeaea;
+  width: 260px;
+  margin: auto;
+  font-size: 14px;
+  position: relative;
+}
+
+#mainHeadingText {
+  padding: 4px;
+}
+
+#progressBar {
+  width: 260px;
+  height: 12px;
+  background-color: #f1ebeb;
+  margin: auto;
+  margin-top: 10px;
+  border-style: solid;
+  border-width: 0.3px;
+  border-color: #C0C0C0;
+  border-bottom: 0;
+}
+
+#completed {
+  height: 100%;
+  width: 77%;
+  background-color: #EF5F3C;
+}
+
+#mainWell {
+  width: 260px;
+  height: 200px;
+  border-style: solid;
+  border-width: 0.3px;
+  border-color: #C0C0C0;
+  box-shadow: 0.2px 0.2px #C0C0C0;
+  margin: auto;
+  padding: 20px;
+  text-align: left;
+  font-size: 12px;
+}
+
+#redText {
+  color: #EF5F3C;
+  font-weight: bold;
+}
+
+#line1 {
+  color: #8a8a8a;;
+  font-weight: 500;
+}
+
+#line2 {
+  color: #8a8a8a;
+  font-weight: 500;
+}
+
+#donorNo {
+  font-weight: bold;
+  color: #827979;
+}
+
+#beforePlaceHolder::before {
+  content: "$";
+  z-index: 100;
+  left: 8px;
+  top: 8px;
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  color: #777;
+}
+
+#beforePlaceHolder {
+  display: inline-block;
+  position: relative;
+}
+
+#form1 {
+  width: 100px;
+  height: 45px;
+  border-radius: 4px;
+  border: 0.5px solid #C0C0C0;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  padding-left:20px;
+  margin-bottom: 8px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+::placeholder { 
+    color: #424242;
+}
+
+#giveNow {
+  width: 100px;
+  margin-left: 15px;
+  height: 45px;
+  background-color: #1CBC2C;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 0px;
+}
+
+#whyGive {
+  font-style: italic;
+  color: #00b7fd;
+  font-weight: 550;
+}
+
+#saveButton {
+  margin-top: 15px;
+  height: 35px;
+  width: 120px;
+  margin-left: 0px;
+  background-color: #fafafa;
+  color: #808080;
+  font-weight: bold;
+  border-radius: 2px;
+  border: 0.5px solid #C0C0C0;
+  font-size: 11px;
+}
+
+#friendsButton {
+  height: 35px;
+  width: 120px;;
+  margin-left: 12px;
+  font-weight: bold;
+  border-radius: 2px;
+  border: 0.5px solid #C0C0C0;
+  color: #808080;
+  background-color: #fafafa;
+  font-size: 11px;
+}
